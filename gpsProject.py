@@ -124,7 +124,7 @@ all_items = listbox.get(0, END)
 listbox.bind('<<ListboxSelect>>', items_selected)
 
 #only creates a marker for the user is the location is known
-if longitude != 'Unknown' and latitude != 'Unkown':
+if longitude != 'Unknown' and latitude != 'Unknown':
     marker_1 = map_widget.set_position(latitude, longitude, marker=True)
     print(marker_1.position)
 
